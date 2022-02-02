@@ -1,0 +1,52 @@
+@media(max-width: 1024px)
+	footer .container .footer__img
+		max-width: 320px
+@media(max-width: 1023px)
+    footer .container
+        flex-wrap: wrap
+        gap: 25px
+        justify-content: center
+    .main
+        flex-direction: column
+        align-items: baseline
+    .main .main__text .main__text-one, .main .main__text .main__text-two
+        max-width: 100%
+    .combinatorial .container
+        flex-direction: column-reverse
+@media(max-width: 767px)
+    .accordion .accordion__tab .tab-title
+        padding: 26px 81px 26px 28px
+        height: auto
+    .portraits .container
+        align-items: baseline
+        flex-direction: column
+    .portraits .container .portraits__text p
+        max-width: 100%
+    header .container
+        flex-direction: column
+        align-items: baseline
+    header .container .header__contacts
+        width: 100%
+        gap: inherit
+        justify-content: space-between
+    .btn
+        max-width: 170px
+    header, .main, .combinatorial, .accordion
+        margin-bottom: 30px
+    .combinatorial, .portraits
+        padding: 30px 0
+    h2 
+        font-size: 25px
+        line-height: 28px
+    h1 
+        font-size: 40px
+        line-height: 45px
+    header
+        padding: 20px 0
+@media(max-width: 375px)
+    footer .container nav ul
+        gap: 15px
+    .btn
+        min-width: initial
+    header .container .header__contacts
+        gap: 10px

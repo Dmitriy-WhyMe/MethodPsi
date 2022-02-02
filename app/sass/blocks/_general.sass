@@ -1,0 +1,190 @@
+// main page elements
+body
+	font-size: 16px
+	line-height: 24px
+	color: #222222
+	font-family: 'Montserrat', sans-serif
+	font-weight: 400
+	background: white
+	overflow-x: hidden
+	// +scrollbar(10px, auto, $yellow, $gray2, $dark, null)
+
+.page-container
+	max-width: 1920px
+	width: 100%
+	margin: 0 auto
+	overflow: hidden
+
+.container
+	max-width: 1170px
+	width: 100%
+	padding: 0
+	margin: 0 auto
+	+mq($max-width: 1200px)
+		padding: 0 15px
+		max-width: 100%
+	+mq($max-width: 575px)
+		padding: 0 10px
+
+.btn
+	background: #55B353
+	border-radius: 250px
+	min-width: 170px
+	width: 100%
+	height: 47px
+	display: flex
+	align-items: center
+	justify-content: center
+	color: white
+	font-weight: 600
+	font-size: 16px
+	line-height: 20px
+
+.flex
+	display: flex
+
+h1
+	font-weight: bold
+	font-size: 50px
+	line-height: 60px
+
+h2
+	font-weight: bold
+	font-size: 36px
+	line-height: 40px
+
+.main
+	margin-bottom: 65px
+	gap: 34px
+	align-items: center
+	.main__text 
+		h1
+			margin-bottom: 11px
+		.main__text-one
+			margin-bottom: 11px
+			max-width: 366px
+		.main__text-two
+			margin-bottom: 26px
+			max-width: 355px
+		a
+			max-width: 161px
+	.main__video
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: center
+		a
+			width: 56px
+			height: 56px
+			border: 2px solid white
+			border-radius: 100%
+			position: absolute
+			display: flex
+			align-items: center
+			justify-content: center
+		img
+			border-radius: 20px
+			max-width: 770px
+			width: 100%
+.combinatorial
+	padding: 60px 0 64px 0px
+	margin-bottom: 65px
+	background: #F8F8F8
+	.container
+		gap: 30px
+		align-items: center
+		img
+			border-radius: 15px
+			max-width: 370px
+			width: 100%
+		.combinatorial__text 
+			h2
+				margin-bottom: 19px
+			.combinatorial__text-one
+				margin-bottom: 15px
+				max-width: 740px
+				width: 100%
+			.combinatorial__text-two
+				max-width: 753px
+				width: 100%
+.accordion
+	display: flex
+	flex-direction: column
+	gap: 10px
+	margin-bottom: 60px
+	.accordion__tab
+		.tab-title
+			padding-left: 28px
+			height: 76px
+			display: flex
+			align-items: center
+			cursor: pointer
+			font-weight: 600
+			font-size: 16px
+			line-height: 24px
+			color: #222222
+			position: relative
+			box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1)
+			border-radius: 10px
+			border: 1px solid white
+			&:hover
+				color: #55B353
+				border: 1px solid #55B353
+			&::after
+				content: ''
+				background: url(../img/ep_arrow-down.svg)
+				background-repeat: no-repeat
+				background-position: center
+				position: absolute
+				right: 20px
+				width: 36px
+				height: 36px
+				display: flex
+				align-items: center
+				justify-content: center
+				border: 1px solid #55B353
+				border-radius: 100%
+		input
+			display: none
+		.accordion__content
+			display: none
+			flex-direction: column
+			gap: 10px
+			padding: 23px 28px
+			p
+				max-width: 1090px
+				width: 100%
+.accordion__tab input:checked ~ .accordion__content
+	display: flex
+.accordion__tab input:not(:checked) + .accordion__content
+	display: none
+.accordion__tab input:checked + .tab-title::after
+	background: url(../img/ep_arrow-up.svg)
+	background-repeat: no-repeat
+	background-position: 10px 8px
+.portraits
+	background: #F8F8F8
+	padding: 53px 0 44px 0
+	.container
+		gap: 13px
+		align-items: center
+		.portraits__text 
+			h2
+				margin-bottom: 9px
+			p
+				max-width: 287px
+		.portraits__images 
+			display: flex
+			gap: 30px
+			.portraits__block 
+				img
+					border-radius: 15px
+					max-width: 270px
+					width: 100%
+				p
+					font-weight: 600
+					font-size: 18px
+					line-height: 24px
+					margin-top: 18px
+
+

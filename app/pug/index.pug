@@ -1,0 +1,79 @@
+- var img = 'img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+			section.main(class="flex container") 
+				.main__text 
+					h1 P Method Psi
+					p.main__text-one is an independent organisation regulated by the Combinatorial Psychology Foundation.
+					p.main__text-two Get a free 60 minute consultation on Zoom or Whatsapp/Telegram Chat. For regular clients I operate offline in different locations globally
+					a.btn(href="#") Book Now
+				.main__video
+					a(href="#") <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.948501 0.692497C1.23474 0.545099 1.5561 0.479526 1.87721 0.502992C2.19832 0.526457 2.50673 0.638052 2.7685 0.825497L15.0185 9.5755C15.2454 9.73738 15.4303 9.9511 15.5578 10.1989C15.6854 10.4466 15.752 10.7213 15.752 11C15.752 11.2787 15.6854 11.5533 15.5578 11.8011C15.4303 12.0489 15.2454 12.2626 15.0185 12.4245L2.7685 21.1745C2.50682 21.3618 2.19856 21.4733 1.87762 21.4968C1.55667 21.5202 1.23547 21.4547 0.94933 21.3075C0.663187 21.1603 0.423181 20.937 0.255698 20.6622C0.0882145 20.3874 -0.000260164 20.0718 9.60475e-07 19.75V2.25C-0.000336041 1.92829 0.0880156 1.61271 0.255347 1.33794C0.422679 1.06317 0.662514 0.839841 0.948501 0.692497Z" fill="white"/></svg>
+					img(src=img+"unsplash_1A8yP_5msac.png", alt="")
+			section.combinatorial
+				.container(class="flex")
+					img(src=img+"unsplash_TxSVqNgnjq4.png", alt="")
+					.combinatorial__text 
+						h2 Combinatorial Psychology
+						p.combinatorial__text-one is a proprietary method of psychological analysis developed concurrently in Germany, the United States and the United Kingdom in the latter part of the 20th century. The earliest advocates of the method include the inventor of electroencephalography (EEG) which has today become neuroscience, Professor W. Grey Walter of the Burden Neurological Insitute at Bristol.
+						p.combinatorial__text-two Other proponents for this have included two Nobel Prize Winners in the fields of biology and chemistry, Dr. Konrad Lorenz and Dr. Niko Tinbergen. As a young student I was mentored and trained in this method of analysis and have been using it for many years to solve my own problems and those of others. This extensive method can be used to solve a range of issues both strategic, for example in business and emotional when applied to relationships and individual interests.
+			section.accordion(class="container")
+				.accordion__tab
+					input(type="checkbox" id="tab1" name="tab-group")
+					label(for="tab1" class="tab-title") Why Combinatorial Psychology?
+					.accordion__content 
+						p Anthropologists would study different types of society during the colonial and industrial periods and note the differences between ‘Europeans’ and the others, but this distinction between our formerly incredibly diverse cultures and the European/American world-system is increasingly disappearing. Heterogeneity is disappearing and homogeneity is the rule, we will think the same, talk the same, act the same and believe the same. Our objectives will be united in global conformity.
+						p Some ‘nations’ react to this world-system, but they do so based on 19th century nation-state principles with little difference in behaviour within these societies. Their objectives are to define boundaries, set social rules and laws and bring their societies back to a former conservative ideal when everything was better. Though there is nothing we can do about our technological advances and the impact this has on things like war or communications. This does not have to be true of people, you and me. We can choose to follow the script, or to write it ourselves.
+						p If what I am saying sounds romantic or idealistic, I should mention that for me, deprogramming as I mentioned earlier, is the essence of being human. If you don’t want to be a machine, you have to deprogram, if you want to experience satisfaction, friendship, love, beauty and wonder, you need to start from being true to your human condition, to be able to look in the mirror so to speak and not hide from your own self, not doing so results in a state of psychosis or distorted
+				.accordion__tab
+					input(type="checkbox" id="tab2" name="tab-group")
+					label(for="tab2" class="tab-title") How to change ourselves?
+					.accordion__content 
+						p Anthropologists would study different types of society during the colonial and industrial periods and note the differences between ‘Europeans’ and the others, but this distinction between our formerly incredibly diverse cultures and the European/American world-system is increasingly disappearing. Heterogeneity is disappearing and homogeneity is the rule, we will think the same, talk the same, act the same and believe the same. Our objectives will be united in global conformity.
+						p Some ‘nations’ react to this world-system, but they do so based on 19th century nation-state principles with little difference in behaviour within these societies. Their objectives are to define boundaries, set social rules and laws and bring their societies back to a former conservative ideal when everything was better. Though there is nothing we can do about our technological advances and the impact this has on things like war or communications. This does not have to be true of people, you and me. We can choose to follow the script, or to write it ourselves.
+						p If what I am saying sounds romantic or idealistic, I should mention that for me, deprogramming as I mentioned earlier, is the essence of being human. If you don’t want to be a machine, you have to deprogram, if you want to experience satisfaction, friendship, love, beauty and wonder, you need to start from being true to your human condition, to be able to look in the mirror so to speak and not hide from your own self, not doing so results in a state of psychosis or distorted
+				.accordion__tab
+					input(type="checkbox" id="tab3" name="tab-group")
+					label(for="tab3" class="tab-title") The west versus the rest
+					.accordion__content 
+						p Anthropologists would study different types of society during the colonial and industrial periods and note the differences between ‘Europeans’ and the others, but this distinction between our formerly incredibly diverse cultures and the European/American world-system is increasingly disappearing. Heterogeneity is disappearing and homogeneity is the rule, we will think the same, talk the same, act the same and believe the same. Our objectives will be united in global conformity.
+						p Some ‘nations’ react to this world-system, but they do so based on 19th century nation-state principles with little difference in behaviour within these societies. Their objectives are to define boundaries, set social rules and laws and bring their societies back to a former conservative ideal when everything was better. Though there is nothing we can do about our technological advances and the impact this has on things like war or communications. This does not have to be true of people, you and me. We can choose to follow the script, or to write it ourselves.
+						p If what I am saying sounds romantic or idealistic, I should mention that for me, deprogramming as I mentioned earlier, is the essence of being human. If you don’t want to be a machine, you have to deprogram, if you want to experience satisfaction, friendship, love, beauty and wonder, you need to start from being true to your human condition, to be able to look in the mirror so to speak and not hide from your own self, not doing so results in a state of psychosis or distorted
+				.accordion__tab
+					input(type="checkbox" id="tab4" name="tab-group")
+					label(for="tab4" class="tab-title") Going deeper
+					.accordion__content 
+						p Anthropologists would study different types of society during the colonial and industrial periods and note the differences between ‘Europeans’ and the others, but this distinction between our formerly incredibly diverse cultures and the European/American world-system is increasingly disappearing. Heterogeneity is disappearing and homogeneity is the rule, we will think the same, talk the same, act the same and believe the same. Our objectives will be united in global conformity.
+						p Some ‘nations’ react to this world-system, but they do so based on 19th century nation-state principles with little difference in behaviour within these societies. Their objectives are to define boundaries, set social rules and laws and bring their societies back to a former conservative ideal when everything was better. Though there is nothing we can do about our technological advances and the impact this has on things like war or communications. This does not have to be true of people, you and me. We can choose to follow the script, or to write it ourselves.
+						p If what I am saying sounds romantic or idealistic, I should mention that for me, deprogramming as I mentioned earlier, is the essence of being human. If you don’t want to be a machine, you have to deprogram, if you want to experience satisfaction, friendship, love, beauty and wonder, you need to start from being true to your human condition, to be able to look in the mirror so to speak and not hide from your own self, not doing so results in a state of psychosis or distorted
+				.accordion__tab
+					input(type="checkbox" id="tab5" name="tab-group")
+					label(for="tab5" class="tab-title") How does Combinatorial Psychology differ from more traditional approaches?
+					.accordion__content 
+						p Anthropologists would study different types of society during the colonial and industrial periods and note the differences between ‘Europeans’ and the others, but this distinction between our formerly incredibly diverse cultures and the European/American world-system is increasingly disappearing. Heterogeneity is disappearing and homogeneity is the rule, we will think the same, talk the same, act the same and believe the same. Our objectives will be united in global conformity.
+						p Some ‘nations’ react to this world-system, but they do so based on 19th century nation-state principles with little difference in behaviour within these societies. Their objectives are to define boundaries, set social rules and laws and bring their societies back to a former conservative ideal when everything was better. Though there is nothing we can do about our technological advances and the impact this has on things like war or communications. This does not have to be true of people, you and me. We can choose to follow the script, or to write it ourselves.
+						p If what I am saying sounds romantic or idealistic, I should mention that for me, deprogramming as I mentioned earlier, is the essence of being human. If you don’t want to be a machine, you have to deprogram, if you want to experience satisfaction, friendship, love, beauty and wonder, you need to start from being true to your human condition, to be able to look in the mirror so to speak and not hide from your own self, not doing so results in a state of psychosis or distorted
+			section.portraits
+				.container(class="flex")
+					.portraits__text 
+						h2 Heading
+						p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+					.portraits__images 
+						.portraits__block 
+							img(src=img+"2.png", alt="")
+							p Name 1
+						.portraits__block 
+							img(src=img+"3.png", alt="")
+							p Name 2
+						.portraits__block 
+							img(src=img+"1.png", alt="")
+							p Name 3
+		include blocks/footer.pug
+		include blocks/scripts.pug
